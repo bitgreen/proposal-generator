@@ -13,10 +13,12 @@ npm run build
 
 You will find in the vendor folder the file index.js which index.html reference. This file handle a browserified version of @dashevo/dashcore-lib aswell as some inner logic that you can find in "js/index.js".
 
-## Dockerized
+## Addendum
 
-A Dockerfile has been included in order to build the site deterministically, as well as a script to run the Docker site build, and place the resulting artifacts in the `dist/` directory. To run the full Dockerized build, run this script:
+After installation, modify 'node_modules/@dashevo/dashcore-lib/lib/networks.js' lines 135-137 to read:
 
 ```
-bash scripts/build.sh
+  pubkeyhash: 0x26,
+  privatekey: 0x2e,
+  scripthash: 0x06,
 ```
