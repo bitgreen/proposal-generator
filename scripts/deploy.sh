@@ -16,5 +16,5 @@ if [ "$DEPLOY_ENV" = "production" ]; then
     --exclude package.json \
     --exclude scripts \
     --delete-after \
-    . deploy@proposal.dash.org:/var/www/govobject-proposal/
+    . deploy@proposals.bitg.org:/var/www/govobject-proposal/
 fi
