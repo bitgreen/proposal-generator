@@ -1,4 +1,4 @@
-var Bitcore = require('@dashevo/dashcore-lib');
+var Bitcore = require('bitgreen-lib');
 
 var socket;
 var paymentCycle;
@@ -60,7 +60,7 @@ $(document).ready(function() {
     $('#end_epoch').change(function() {
         updateTotal();
     });
-    
+
     $('#payment_amount').on('input',function(){
       //As of now, core doesn't handle comma, but handle dots. Therefore we change it to the user.
       var payment_amount_value = $('#payment_amount').val();
